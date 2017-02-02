@@ -195,6 +195,7 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
   background: #f26523;
   color: #fff;
   padding: 0 27px 0 27px;
+  font-size: 16px;
 }
 
 .inner {
@@ -221,7 +222,9 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
 .inner .inner-block .inner-form {
   margin-top: 46px;
   padding: 25px 35px 45px 35px;
-  background: rgba(22, 24, 22, 0.45);
+  background: rgba(0, 0, 0, 0.45);
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
 }
 
 .inner .inner-block .inner-form .first-form .form-control {
