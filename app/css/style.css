@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+body {
+  margin: 0;
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Open Sans";
+  font-weight: 400;
+  background-color: #fff;
+  line-height: 1;
+  color: #000;
+  font-size: 12px; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  border: none; }
+
+form {
+  margin: 0; }
+
+input[type="submit"], button {
+  cursor: pointer;
+  border: none; }
+
+input:not([type="checkbox"]):not([type="radio"]), select {
+  border: none;
+  -webkit-appearance: none; }
+
+textarea {
+  resize: vertical;
+  border: none;
+  -webkit-appearance: none;
+  overflow: auto; }
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 1; }
+
+::-moz-placeholder {
+  color: inherit;
+  opacity: 1; }
+
+:-moz-placeholder {
+  color: inherit;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: inherit;
+  opacity: 1; }
+
+*, *:focus {
+  outline: none !important; }
+
+label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+*:before, *:after {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+input, textarea, input:before, textarea:before, input:after, textarea:after {
+  -webkit-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial; }
+
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+:focus::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+:focus:-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+:focus:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+.inner::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: -4px; }
+
+.inner > * {
+  display: inline-block;
+  vertical-align: middle; }
+
+.admin-ic {
+  background-image: url(../img/sprite.png);
+  background-position: -74px -101px;
+  width: 29px;
+  height: 30px; }
+
+.apartment-ic {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -64px;
+  width: 35px;
+  height: 35px; }
+
+.commers-ic {
+  background-image: url(../img/sprite.png);
+  background-position: -101px 0px;
+  width: 35px;
+  height: 34px; }
+
+.crime-ic {
+  background-image: url(../img/sprite.png);
+  background-position: -64px 0px;
+  width: 35px;
+  height: 35px; }
+
+.hands-ic {
+  background-image: url(../img/sprite.png);
+  background-position: -101px -36px;
+  width: 35px;
+  height: 34px; }
+
+.home-ic {
+  background-image: url(../img/sprite.png);
+  background-position: -138px 0px;
+  width: 27px;
+  height: 35px; }
+
+.keys-ic {
+  background-image: url(../img/sprite.png);
+  background-position: -37px -101px;
+  width: 35px;
+  height: 33px; }
+
+.people-ic {
+  background-image: url(../img/sprite.png);
+  background-position: -37px -64px;
+  width: 35px;
+  height: 35px; }
+
+.planet-ic {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 62px;
+  height: 62px; }
+
+.resident-ic {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -101px;
+  width: 35px;
+  height: 34px; }
+
+.serch-ic {
+  background-image: url(../img/sprite.png);
+  background-position: -138px -37px;
+  width: 19px;
+  height: 19px; }
+
+.container {
+  width: 1060px;
+  padding: 0 10px;
+  margin: 0 auto; }
+
+.header {
+  height: 80px;
+  width: 100%;
+  background: #fff; }
+  .header .logo {
+    float: left; }
+  .header .header-nav {
+    float: right; }
+    .header .header-nav li {
+      display: inline-block; }
+      .header .header-nav li a {
+        font-size: 16px; }
+        .header .header-nav li a:hover {
+          color: #ef6223; }
+
+.form-control {
+  height: 57px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  font-size: 16px;
+  color: #7e878d;
+  padding-left: 25px; }
+
+.form-btn {
+  height: 57px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background: #ef6223;
+  color: #fff;
+  padding: 0 27px 0 27px;
+  font-size: 16px; }
+
+.icon {
+  display: inline-block; }
+
+input[type="checkbox"] {
+  display: none; }
+  input[type="checkbox"] + label {
+    cursor: pointer; }
+    input[type="checkbox"] + label::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      -webkit-border-radius: 2px;
+              border-radius: 2px;
+      background: #fff;
+      -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.22) inset;
+              box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.22) inset; }
+  input[type="checkbox"]:checked + label::before {
+    background: #fff url("../img/checbox-checed-bg.png") no-repeat center center; }
+
+.inner {
+  height: -webkit-calc( 100vh - 80px);
+  height: calc( 100vh - 80px);
+  background: url("../img/inner-bg.jpg") no-repeat top center;
+  background-size: cover;
+  text-align: center; }
+  .inner .inner-block {
+    color: #fff; }
+    .inner .inner-block h1 {
+      font-size: 72px;
+      margin-bottom: 26px; }
+    .inner .inner-block > span {
+      font-size: 28px; }
+    .inner .inner-block .inner-form {
+      margin-top: 46px;
+      padding: 25px 35px 45px 35px;
+      background: rgba(0, 0, 0, 0.45);
+      -webkit-border-radius: 2px;
+              border-radius: 2px; }
+      .inner .inner-block .inner-form .more-option {
+        display: block;
+        cursor: pointer; }
+      .inner .inner-block .inner-form .first-form .form-control {
+        width: 326px;
+        margin-right: 7px; }
+      .inner .inner-block .inner-form .second-form {
+        display: none; }

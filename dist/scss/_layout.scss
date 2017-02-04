@@ -1,0 +1,71 @@
+@import "custom-variables";
+
+.container{
+  width: $desktopContainerWidth;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header{
+  height: $desktopHeaderHeight;
+  width: 100%;
+  background: #fff;
+  .logo{
+    float: left;
+  }
+  .header-nav{
+    float: right;
+    li{
+      display: inline-block;
+      a{
+        font-size: 16px;
+        &:hover{
+          color: $generalOrange;
+        }
+      }
+    }
+  }
+}
+
+.form-control{
+  height: 57px;
+  border-radius: 2px;
+  font-size: 16px;
+  color:#7e878d;
+  padding-left: 25px;
+}
+.form-btn{
+  height: 57px;
+  border-radius: 2px;
+  background: $generalOrange;
+  color: #fff;
+  padding: 0 27px 0 27px;
+  font-size: 16px;
+}
+
+.icon{
+  display: inline-block;
+}
+
+input[type="checkbox"]{
+  display: none;
+  & + label{
+    cursor: pointer;
+    &::before{
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border-radius: 2px;
+      background: #fff;
+      box-shadow: 0px 2px 3px rgba(0,0,0,.22) inset;
+    }
+  }
+  &:checked{
+    & + label{
+      &::before{
+        background: #fff url('../img/checbox-checed-bg.png') no-repeat center center;
+      }
+    }
+  }
+}
