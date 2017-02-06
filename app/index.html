@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Find a Solicitor</title>
     <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -37,16 +38,258 @@
                        <div class="second-form">
                            <div class="input-group">
                                <!--селект и два инпута тута-->
+                               <div class="w30">
+                                 <label for="choose">Language</label>
+                                 <select name="choose-language" id="choose">
+                                 		<option value="">All Languages</option>
+                                 		<option value="">English</option>
+                                 		<option value="">Russian</option>
+                                 		<option value="">Spanish</option>
+                                 </select>
+                               </div>
+                               <div class="w30">
+                                 <label for="name">Name</label>
+                                 <input type="text"  class="form-control" name="userName" placeholder="e.g. Joe Bloggs" id="name"> 
+                                </div>
+                              <div class="w30">
+                                <label for="sra">SRA ID</label>
+  								              <input type="text"  class="form-control" name="id" id="sra">
+                              </div>
                            </div>
                            <div class="input-group">
                                <input type="checkbox" name="legal" id="legal">
-                               <label for="legal">Some text</label>
+                               <label for="legal">Accepts legal aid</label>
+                               <input type="checkbox" name="disabled" id="disabled">
+                               <label for="disabled">Disabled access</label>
+                               <input type="checkbox" name="loops" id="loops">
+                               <label for="loops">Hearing loops</label>
+                               <input type="checkbox" name="language" id="language">
+                               <label for="language">Sign language</label>
                            </div>
                        </div>
                    </form>
                </div>
            </div>
         </div>
+        <div class="bg-grey slogan">
+        	<div class="container">
+        		<p>
+        			We provide access to over 15,000 qualified solicitors in the UK in 700 areas of international law. 
+        			<a href="#">Find a solicitor now</a>
+        		</p>
+        	</div>
+        </div>
+        <div class="service-wrap">
+        	<div class="container">
+        		<div class="row">
+        			<div class="service-item">
+        				<a href="#">
+	        				<span class="icon home-ic"></span>
+	        				<h1>Commercial property <span class="sub">(6298)</span></h1>
+	        				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corrupti, repellendus! Tenetur, obcaecati odit maiores dolorum facilis.
+	        				</p>
+	        			</a>
+        			</div>
+        			<div class="service-item">
+        				<a href="#">
+	        				<span class="icon keys-ic"></span>
+	        				<h1>Commercial property <span class="sub">(6298)</span></h1>
+	        				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corrupti, repellendus! Tenetur, obcaecati odit maiores dolorum facilis.
+	        				</p>
+	        			</a>
+        			</div>
+        			<div class="service-item">
+        				<a href="#">
+	        				<span class="icon admin-ic"></span>
+	        				<h1>Commercial property <span class="sub">(6298)</span></h1>
+	        				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corrupti, repellendus! Tenetur, obcaecati odit maiores dolorum facilis.
+	        				</p>
+	        			</a>
+        			</div>
+        			<div class="service-item">
+        				<a href="#">
+	        				<span class="icon commers-ic"></span>
+	        				<h1>Commercial property <span class="sub">(6298)</span></h1>
+	        				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corrupti, repellendus! Tenetur, obcaecati odit maiores dolorum facilis.
+	        				</p>
+	        			</a>
+        			</div>
+        			<div class="service-item">
+        				<a href="#">
+	        				<span class="icon hands-ic"></span>
+	        				<h1>Commercial property <span class="sub">(6298)</span></h1>
+	        				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corrupti, repellendus! Tenetur, obcaecati odit maiores dolorum facilis.
+	        				</p>
+	        			</a>
+        			</div>
+        			<div class="service-item">
+        				<a href="#">
+	        				<span class="icon apartment-ic"></span>
+	        				<h1>Commercial property <span class="sub">(6298)</span></h1>
+	        				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corrupti, repellendus! Tenetur, obcaecati odit maiores dolorum facilis.
+	        				</p>
+	        			</a>
+        			</div>
+        			<div class="service-item">
+        				<a href="#">
+	        				<span class="icon people-ic"></span>
+	        				<h1>Commercial property <span class="sub">(6298)</span></h1>
+	        				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corrupti, repellendus! Tenetur, obcaecati odit maiores dolorum facilis.
+	        				</p>
+	        			</a>
+        			</div>
+        			<div class="service-item">
+        				<a href="#">
+	        				<span class="icon resident-ic"></span>
+	        				<h1>Commercial property <span class="sub">(6298)</span></h1>
+	        				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corrupti, repellendus! Tenetur, obcaecati odit maiores dolorum facilis.
+	        				</p>
+	        			</a>
+        			</div>
+        			<div class="service-item">
+        				<a href="#">
+	        				<span class="icon crime-ic"></span>
+	        				<h1>Commercial property <span class="sub">(6298)</span></h1>
+	        				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corrupti, repellendus! Tenetur, obcaecati odit maiores dolorum facilis.
+	        				</p>
+	        			</a>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <div class="carusel">
+        	<div class="container">
+        		<h1>More Areas of Law (46)</h1>
+        	</div>
+        </div>
+        <div class="articles bg-blue">
+        	<div class="container">
+        		<h1>Legal articles, advice and help</h1>
+        		<div class="row">
+        			<div class="article-item">
+        				<h2>Criminal Injuries Compensation</h2>
+        				<p>If you suffer injury as a victim of a crime involving violence then you may be eligible to apply to the Criminal Injuries Compensation Authority (CICA) for compensation. <span>Read More</span></p>
+        			</div>
+        			<div class="article-item">
+        				<h2>Criminal Injuries Compensation</h2>
+        				<p>If you suffer injury as a victim of a crime involving violence then you may be eligible to apply to the Criminal Injuries Compensation Authority (CICA) for compensation. <span>Read More</span></p>
+        			</div>
+        			<div class="article-item">
+        				<h2>Criminal Injuries Compensation</h2>
+        				<p>If you suffer injury as a victim of a crime involving violence then you may be eligible to apply to the Criminal Injuries Compensation Authority (CICA) for compensation. <span>Read More</span></p>
+        			</div>
+        		</div>
+            <h1>Categories</h1>
+            <form>
+              <button class="btn btn-white">
+                Driving<span class="sub">(4)</span>
+              </button>
+              <button class="btn btn-white">
+                General Advice<span class="sub">(2)</span>
+              </button>
+              <button class="btn btn-white">
+                Driving<span class="sub">(4)</span>
+              </button>
+              <button class="btn btn-white">
+                General Advice<span class="sub">(2)</span>
+              </button>
+            </form>
+        	</div>
+        </div> 
+          <div class="counties">
+            <div class="container">
+              <h2>Top Counties</h2>
+               <form>
+                <button class="btn btn-orange">
+                    Greater London<span class="sub">(726)</span>
+                </button>
+                <button class="btn btn-orange">
+                    Greater Manchester<span class="sub">(726)</span>
+                </button>
+                <button class="btn btn-orange">
+                    West Midlands<span class="sub">(726)</span>
+                </button>
+                <button class="btn btn-orange">
+                    West Yorkshire<span class="sub">(726)</span>
+                </button>
+                <button class="btn btn-orange">
+                    Kent<span class="sub">(726)</span>
+                </button>
+                <button class="btn btn-orange">
+                    Hampshire<span class="sub">(726)</span>
+                </button>
+                <button class="btn btn-orange">
+                    Lancashire<span class="sub">(726)</span>
+                </button>
+                <button class="btn btn-orange">
+                    Cheshire<span class="sub">(726)</span>
+                </button>
+                <button class="btn btn-orange">
+                    Merseyside<span class="sub">(726)</span>
+                </button>
+                <button class="btn btn-orange">
+                    Nottinghamshire<span class="sub">(726)</span>
+                </button>
+               </form>
+            <div class="find">
+                  <div class="part-img">
+                    <img src="img/asia.png" alt="">
+                  </div>
+                   <div class="part-find"> 
+                    <h3>Find a Solicitor In...</h3>
+                   </div>
+                   <div class="part">
+                     <a href="#">England</a>
+                     <span>3654 solicitors</span>
+                   </div>
+                   <div class="part">
+                     <a href="#">Wales</a>
+                     <span>3654 solicitors</span>
+                   </div>
+                  <div class="part">
+                     <a href="#">Scotland</a>
+                     <span>3654 solicitors</span>
+                  </div>
+               </div> 
+            </div>
+          </div>
+          <div class="login bg-blue">
+            <div class="container">
+                <div class="w50">
+                  <h3>Are you a solicitor?</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ullam maxime assumenda iure, voluptates cumque nemo</p>
+                </div>
+                <div class="w50">
+                    <form>
+                        <button class="btn btn-white">
+                          Sign up as Solicitor
+                        </button>
+                        <button class="btn btn-white">
+                          Solicitor Login
+                        </button>
+                    </form>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <ul class="nav">
+          <li>home</li>
+          <li>ARTICLES</li>
+          <li>CONTACT</li>
+          <li>LOGIN</li>
+          <li>TERMS</li>
+          <li>COOKIES</li>
+        </ul>
+        <div class="logo">
+            <a href="#">
+              <img src=img/logo.png alt="">
+            </a>
+        </div>
+        <span>&copy;Solicitors Guru 2015</span>
+      </div>
+      
     </div>
 
     <!--jQuery-->
@@ -55,6 +298,8 @@
              integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
              crossorigin="anonymous"></script>
      <script src="js/plugin.js"></script>
+     <script src="js/jquery.formstyler.min.js"></script>
+     <script src="js/init.js"></script>
         
 </body>
 </html>

@@ -6,7 +6,7 @@ var merge = require('merge-stream');
 
 gulp.task('sass', function () {
     return gulp.src('dist/scss/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(autoprefixer(['last 15 versions','>1%','ie 9']))
         .pipe(gulp.dest('app/css'));
 });

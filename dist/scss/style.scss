@@ -1,10 +1,10 @@
-@import "custom-variables";
-@import "fonts";
-@import "reset";
-@import "default-clases";
-@import "sprite";
+@import "_custom-variables";
+@import "_fonts";
+@import "_reset";
+@import "_default-clases";
+@import "_sprite";
 @include sprites($spritesheet-sprites);
-@import "layout";
+@import "_layout";
 
 .inner{
   @extend %vertical-align;
@@ -26,9 +26,12 @@
       padding: 25px 35px 45px 35px;
       background: rgba(0,0,0,.45);
       border-radius: 2px;
+      // overflow: hidden;
       .more-option{
         display: block;
         cursor: pointer;
+        float: left;
+        margin-top: 8px;
       }
       .first-form{
         .form-control{
@@ -37,8 +40,199 @@
         }
       }
       .second-form{
+        margin-top: 40px;
         display: none;
+        font-size: 16px;
+        .input-group{
+          overflow: hidden;
+          &+.input-group{
+            margin-top: 15px;
+          }
+          .w30{
+            width: 33.3%;
+            float: left;
+            input{
+              height: 50px;
+            }
+            label{
+              display: block;
+              margin-bottom: 8px;
+              left:5px;
+            }
+            #choose{
+              z-index: 9;
+            }
+          }
+          label{
+              margin-right:48px;
+              font-size: 16px;
+            }
+        }
       }
     }
+  }
+}
+.slogan{
+  height: 78px;
+  line-height: 78px;
+  width: 100%;
+  text-align: center;
+  border-bottom: solid 1px #e4ebec; 
+  p{
+    font-size: 18px;
+    color: #5a6464;
+    a{
+      color:$generalOrange;
+    }
+  }
+}
+.service-wrap{
+  .row{
+    padding: 50px 0;
+    overflow: hidden;
+    .service-item{
+      float: left;
+      width: 33.33%;
+      padding-right: 10px;
+      margin-bottom: 37px;
+      height: 150px;
+      h1{
+        color: $generalOrange;
+        font-size: 20px;
+        margin-top: 10px;
+      }
+      p{
+        margin-top: 10px;
+        width: 65%;
+      }
+    }
+  }
+}
+// временные атрибуты для ,карусели
+.carusel{
+  height: 170px;
+}
+.articles{
+  padding: 70px 0;
+  text-align: center;
+  form{
+    margin-top: 45px;
+  }
+  h1{
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  .row{
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    .article-item{
+      display: inline-block;
+      float: left;
+      padding: 20px;
+      width: calc(100%/3 - 25px);
+      min-height: 175px;
+      border-top: 6px solid #90bed5;
+      background: $bodyBg;
+      &+.article-item{
+        margin-left: 25px;
+      }
+      h2{
+        font-size: 20px;
+        color: #515a60;
+      }
+      p{
+        font-size: 16px;
+        color: #6c767e;
+        margin-top: 15px;
+        span{
+          color: #30436b;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+.counties{
+  padding: 57px 0 80px;  
+  text-align: center;
+  h2{
+    font-size: 38px;
+    color: #515a60;
+    margin-bottom: 70px;
+  }
+  .find{
+    height: 105px;
+    background: $generalOrange;
+    padding-left: 25px;    
+    .part{      
+      display: inline-block;
+      color: #fff;
+      height: 100%;
+      width: 160px;
+      padding: 20px 0;      
+      border-left: 1px solid #da5a1f;           
+      a{
+        font-size: 24px;
+        display: block;
+        color: inherit;
+        margin-bottom: 7px;
+      }
+      span{
+        font-size: 14px;
+        color: #a54619;        
+      }
+    } 
+    .part-img{
+      width: 110px;
+      display: inline-block;               
+    }    
+    .part-find{
+      color: #fff;
+      width: 400px;
+      display: inline-block;
+      text-align: left;             
+      h3{
+        font-size: 30px;
+        font-weight: normal;
+        display: inline-block;         
+      }
+    }      
+  }
+}
+.login{
+  color: #fff;
+  height: 160px;
+  h3{
+    margin-top: 45px;
+    margin-bottom: 11px;
+    font-size: 32px;
+    font-weight: normal;
+  }
+  p{
+    font-size: 16px;
+  }
+  form{
+    margin-top: 66px;
+  }
+}
+.footer{
+  text-align: center;
+  .nav{
+    margin-top: 45px;
+    margin-bottom: 35px;
+    font-size: 12px;
+    text-transform: uppercase;
+    li{
+      display: inline-block;
+      margin-right: 15px;
+    }
+  }
+  .logo{
+    margin-bottom: 30px;
+  }
+  span{
+    font-size: 14px;    
   }
 }

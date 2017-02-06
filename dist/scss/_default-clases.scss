@@ -13,3 +13,26 @@
     vertical-align: middle;
   }
 }
+.bg-grey{
+  background-color: $bgGrey;
+}
+.sub{
+  font-size: 12px;
+  color: inherit;
+}
+.bg-blue{
+  background: $bgBlue;
+}
+.btn-white{
+      color: #fff;
+      font-size: 16px;
+}
+.btn-orange{
+  color:$generalOrange;
+  font-size: 20px;
+}
+.w50{
+  width: 50%;
+  float: left;
+
+}

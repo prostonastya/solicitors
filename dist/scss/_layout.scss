@@ -12,11 +12,14 @@
   background: #fff;
   .logo{
     float: left;
+    margin-top: 15px;
   }
   .header-nav{
     float: right;
+    margin-top: 27px;
     li{
       display: inline-block;
+      margin-right: 27px;
       a{
         font-size: 16px;
         &:hover{
@@ -33,6 +36,7 @@
   font-size: 16px;
   color:#7e878d;
   padding-left: 25px;
+  padding-right: 10px;
 }
 .form-btn{
   height: 57px;
@@ -59,6 +63,7 @@ input[type="checkbox"]{
       border-radius: 2px;
       background: #fff;
       box-shadow: 0px 2px 3px rgba(0,0,0,.22) inset;
+      margin-right: 14px;
     }
   }
   &:checked{
@@ -67,5 +72,18 @@ input[type="checkbox"]{
         background: #fff url('../img/checbox-checed-bg.png') no-repeat center center;
       }
     }
+  }
+}
+.btn{
+  display: inline-block;
+  padding-right: 25px;
+  padding-left: 25px;
+  background: transparent;
+  border: 2px solid;
+  border-radius: 2px;
+  height: 44px;
+  margin-bottom: 28px; 
+  &+.btn{
+    margin-left: 24px;
   }
 }
