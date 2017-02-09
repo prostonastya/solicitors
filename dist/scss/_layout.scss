@@ -5,7 +5,6 @@
   padding: 0 10px;
   margin: 0 auto;
 }
-
 .header{
   height: $desktopHeaderHeight;
   width: 100%;
@@ -24,12 +23,32 @@
         font-size: 16px;
         &:hover{
           color: $generalOrange;
+          .serch-ic{
+            position: relative;
+          }
         }
+      }
+      .search-form{
+        display: none;
+        position: absolute;
+        right: 520px;
+        top: 22px;
+        z-index: 10;
+        background: $bgGrey;
+        border: 1px solid $generalOrange;
+        border-radius: 10px;
+        font-size: 16px;
+        color: #7e878d;
+        padding-left: 25px;
+        padding-right: 10px;
+        input{        
+          height: 25px;
+          background: $bgGrey;      
+        }         
       }
     }
   }
 }
-
 .form-control{
   height: 57px;
   border-radius: 2px;
@@ -50,7 +69,6 @@
 .icon{
   display: inline-block;
 }
-
 input[type="checkbox"]{
   display: none;
   & + label{
@@ -76,14 +94,25 @@ input[type="checkbox"]{
 }
 .btn{
   display: inline-block;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding: 14px 25px;  
   background: transparent;
   border: 2px solid;
   border-radius: 2px;
-  height: 44px;
-  margin-bottom: 28px; 
-  &+.btn{
-    margin-left: 24px;
+  font-size: 18px;  
+  &.btn-orange{
+    color:$generalOrange;
+    border-color: $generalOrange;
+    &:hover{
+      background: $generalOrange;
+      color: #fff;
+    }
+  }
+  &.btn-white{
+    color: #fff;
+    border-color: #fff;
+    &:hover{
+      background: #fff;
+      color: $generalOrange;
+    }
   }
 }
