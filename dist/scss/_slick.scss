@@ -13,6 +13,11 @@
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
+    a{
+        color: $generalOrange;
+        font-size: 16px;
+        line-height: 1.2;
+    }
 }
 .slick-list {
     position: relative;
@@ -111,9 +116,21 @@
     &.slick-prev{
         left: -60px;
         transform: translateY(-50%) rotate(-135deg);
+        @media (max-width: 1195px){
+            left: -11px;
+        }
+         @media (max-width: 1023px){
+            left: 15px;
+        }
     }
     &.slick-next{
         right: -60px;
         transform: translateY(-50%) rotate(45deg);
+        @media (max-width: 1195px){
+        right: -11px;
+        }   
+        @media (max-width: 1023px){
+        right: 15px;
+        }     
     }
 }

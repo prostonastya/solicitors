@@ -15,6 +15,26 @@ $('.areas-slick-js').slick({
   autoplay: false,
   autoplaySpeed: 2000,
   // centerMode: true,
+  responsive:[
+    {
+      breakpoint: 1024,
+      settings: {
+      slidesToShow: 4,
+       }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+      slidesToShow: 2,
+       }
+    },
+    {
+      breakpoint: 479,
+      settings: {
+      slidesToShow: 1,
+       }
+    }
+  ]
 });
 
 // open search-form
@@ -22,7 +42,7 @@ $('.areas-slick-js').slick({
   var searchForm = $('.search-form');
   serchIcon.on('click', function (){
   // searchForm.slideToggle(1000);
-  searchForm.animate({width:'toggle'}, 1000);
+  searchForm.animate({width:'toggle'}, 500);
   serchIcon.toggleClass('open');
       
    });

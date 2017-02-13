@@ -6,6 +6,7 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/jquery.formstyler.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slicknav.css">
 </head>
 <body>
   <div class="header">
@@ -18,14 +19,14 @@
       <ul class="header-nav">
         <li><a href="#">Articles</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#"><span class="icon serch-ic"></span></a></li>
         <li>
+          <a href="#"><span class="icon serch-ic"></span></a>
           <div class="search-form">
             <form class="search">
               <input type="search" name="" placeholder="search">
             </form>
           </div>
-        </li>
+        </li>        
       </ul>
     </div>
   </div>
@@ -64,13 +65,13 @@
               </div>
               <div class="input-group">
                 <input type="checkbox" name="legal" id="legal">
-                <label for="legal">Accepts legal aid</label>
+                <label for="legal"><span>Accepts legal aid</span></label>
                 <input type="checkbox" name="disabled" id="disabled">
-                <label for="disabled">Disabled access</label>
+                <label for="disabled"><span>Disabled access</span></label>
                 <input type="checkbox" name="loops" id="loops">
-                <label for="loops">Hearing loops</label>
+                <label for="loops"><span>Hearing loops</span></label>
                 <input type="checkbox" name="language" id="language">
-                <label for="language">Sign language</label>
+                <label for="language"><span>Sign language</span></label>
               </div>
             </div>
           </form>
@@ -79,7 +80,7 @@
     </div>
     <div class="bg-grey slogan">
       <div class="container">
-        <p>We provide access to over 15,000 qualified solicitors in the UK in 700 areas of international law.<a href="#">Find a solicitor now</a></p>
+        <p>We provide access to over 15,000 qualified solicitors in the UK in 700 areas of international law. <a href="#">Find a solicitor now</a></p>
       </div>
     </div>
     <div class="service-wrap">
@@ -160,16 +161,16 @@
       <div class="slider-wrap">
         <div class="container">
           <div class="areas-slider areas-slick-js">
-            <div><a href="#">some link</a></div>
-            <div><a href="#">some link</a></div>
-            <div><a href="#">some link</a></div>
-            <div><a href="#">some link</a></div>
-            <div><a href="#">some link</a></div>
-            <div><a href="#">some link</a></div>
-            <div><a href="#">some link</a></div>
-            <div><a href="#">some link</a></div>
-            <div><a href="#">some link</a></div>
-            <div><a href="#">some link</a></div>
+            <div><a href="#">Employment <span class="sub">(182)</span></a></div>
+            <div><a href="#">Banking <span class="sub">(295)</span></a></div>
+            <div><a href="#">Banking <span class="sub">(295)</a></div>
+            <div><a href="#">Employment <span class="sub">(182)</a></div>
+            <div><a href="#">Banking <span class="sub">(295)</a></div>
+            <div><a href="#">Employment <span class="sub">(182)</a></div>
+            <div><a href="#">Banking <span class="sub">(295)</a></div>
+            <div><a href="#">Employment <span class="sub">(182)</a></div>
+            <div><a href="#">Banking <span class="sub">(295)</a></div>
+            <div><a href="#">Employment <span class="sub">(182)</a></div>
           </div>
         </div>
       </div>
@@ -283,10 +284,12 @@
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="js/jquery.slicknav.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/plugin.js"></script>
   <script src="js/jquery.formstyler.min.js"></script>
   <script src="js/init.js"></script>
+  
 
 </body>
 </html>
