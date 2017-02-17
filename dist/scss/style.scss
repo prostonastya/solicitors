@@ -79,18 +79,28 @@
           overflow: hidden;          
           &+.input-group{
             margin-top: 15px;
+            @media (max-width: 767px){
+            text-align: left;
+            }
           }
           span{
             vertical-align: middle;
           }
           label{
-            float: left;                      
+            float: left;  
+            @media (max-width: 767px){
+            float: none;
+            display: block;            
+            }                    
             &~label{              
             margin-left: 48px;
             font-size: 16px;
             line-height: 1.2;
               @media (max-width: 959px){
               margin-left: 30px;
+              }
+              @media (max-width: 767px){
+              margin-left: 0;
               }              
             }            
           }

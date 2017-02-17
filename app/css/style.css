@@ -300,17 +300,11 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
   position: relative;
 }
 
-@media (max-width: 767px) {
-  .header .header-nav li:last-child a {
-    display: inline-block;
-  }
-}
-
-.header .header-nav li:last-child a {
+.header .header-nav li a {
   font-size: 16px;
 }
 
-.header .header-nav li:last-child a:hover {
+.header .header-nav li a:hover {
   color: #f26523;
 }
 
@@ -677,12 +671,25 @@ input[type="checkbox"]:checked + label::before {
   margin-top: 15px;
 }
 
+@media (max-width: 767px) {
+  .inner .inner-block .inner-form .second-form .input-group + .input-group {
+    text-align: left;
+  }
+}
+
 .inner .inner-block .inner-form .second-form .input-group span {
   vertical-align: middle;
 }
 
 .inner .inner-block .inner-form .second-form .input-group label {
   float: left;
+}
+
+@media (max-width: 767px) {
+  .inner .inner-block .inner-form .second-form .input-group label {
+    float: none;
+    display: block;
+  }
 }
 
 .inner .inner-block .inner-form .second-form .input-group label ~ label {
@@ -694,6 +701,12 @@ input[type="checkbox"]:checked + label::before {
 @media (max-width: 959px) {
   .inner .inner-block .inner-form .second-form .input-group label ~ label {
     margin-left: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner .inner-block .inner-form .second-form .input-group label ~ label {
+    margin-left: 0;
   }
 }
 

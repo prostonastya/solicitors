@@ -38,19 +38,15 @@
       display: inline-block;
       margin-right: 27px;
       &:last-child{
-        position: relative;
-        a{
-          @media (max-width: 767px){
-          display: inline-block;
-          }
-        }
+        position: relative;        
+      }
         a{
           font-size: 16px;
           &:hover{
             color: $generalOrange;          
           }
         }
-      }
+      
       .search-form{
         display: none;
         position: absolute;
@@ -63,11 +59,8 @@
         font-size: 16px;
         color: #7e878d;
         padding-left: 25px;
-        padding-right: 10px;
-        // @media (max-width: 767px){
-        //   display: inline-block;
-        //   }
-        input{        
+        padding-right: 10px;        
+        input{ 
           height: 25px;
           background: $bgGrey;      
         }         
