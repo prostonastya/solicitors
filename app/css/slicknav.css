@@ -50,6 +50,7 @@
   .slicknav_nav li {
     display: block; 
     text-align: right;
+    height: 28px;
   }
   .slicknav_nav li+li{
     margin-top: 8px;

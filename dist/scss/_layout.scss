@@ -53,17 +53,21 @@
         right: 35px;
         top: 0;
         z-index: 10;
-        background: $bgGrey;
+        background: #fff;
+        form{
         border: 1px solid $generalOrange;
         border-radius: 10px;
         font-size: 16px;
         color: #7e878d;
         padding-left: 25px;
-        padding-right: 10px;        
+        padding-right: 10px;
+        height: 28px;        
         input{ 
           height: 25px;
-          background: $bgGrey;      
-        }         
+          background: #fff;      
+        }
+        }
+                 
       }
     }
   }
