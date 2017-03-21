@@ -50,15 +50,17 @@
   .slicknav_nav li {
     display: block; 
     text-align: right;
-    height: 28px;
+    height: 30px;
   }
   .slicknav_nav li+li{
     margin-top: 8px;
   }
   .slicknav_nav li:last-child{
-    width: 100%;
+    width: 95%;
     border: 1px solid #f26523;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
+    margin-right: 10px;
+    margin-left: 10px;
     text-align: center;  
     float: right;     
   }
@@ -66,7 +68,7 @@
     background: #fff;
     color: #515a60;
     font-size: 20px;
-    width: 90%;
+    width: 95%;
     text-align: right;
   }
   .slicknav_nav li:last-child a{
